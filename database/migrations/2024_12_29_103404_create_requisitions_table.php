@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('requisitions', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('phone',11);
+            $table->string('phone');
             $table->string('email')->unique();
-            $table->integer('asset_id');
+            // $table->integer('asset_id');
             $table->string('designation')->nullable();
             $table->timestamps();
         });
