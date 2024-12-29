@@ -13,6 +13,32 @@ class AssetsSeeder extends Seeder
      */
     public function run(): void
     {
-        
+        DB::table('assets')->insert([
+            'name' => 'Mouse',
+        ]);
+
+        DB::table('assets')->insert([
+            'name' => 'Keyboard',
+        ]);
+
+        DB::table('assets')->insert([
+            'name' => 'Monitor',
+        ]);
+
+        DB::table('assets')->insert([
+            'name' => 'CPU',
+        ]);
+
+        DB::table('assets')->insert([
+            'name' => 'Water bottle',
+        ]);
+
+        DB::table('assets')->insert([
+            'name' => 'Tissue paper',
+        ]);
+
+        DB::table('assets')->insert([
+            'name' => 'table fan',
+        ]);
     }
 }
